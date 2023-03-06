@@ -1,7 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import axios from 'axios'
 
 export default function Home() {
+
+  axios.get('https://www.googleapis.com/books/v1/volumes?q=' + search +'&key=AIzaSyDaxUKr2VpuzN2RjJUjtgUYBgyBoOOuHq8');
   return (
     <div className={styles.container}>
       <Head>
@@ -15,14 +18,13 @@ export default function Home() {
         <img />
         <a href=''> About Us</a>
         <a href=''> Have Read</a>
-        <a href=''> Recs</a>
+        <a href=''> Book Marked Books</a>
         <a href=''> Groups</a>
         <a href=''> Search</a>
         </nav>
       </header>
 
       <main>
-       
       </main>
 
       <footer>

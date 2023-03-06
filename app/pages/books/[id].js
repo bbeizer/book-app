@@ -1,4 +1,4 @@
-const Page = () => {
+const BookPage = () => {
     return (
         <h1>Book</h1>
     )
