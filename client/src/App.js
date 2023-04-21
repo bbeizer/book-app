@@ -1,8 +1,12 @@
 import './App.css';
+import NavBar from './Components/Navbar';
+import './Components/style.css'
 
 function App() {
   return (
-    <h1>BROCKHAMPTON</h1>
+    <div>
+      <NavBar />
+    </div>
   );
 }
 
