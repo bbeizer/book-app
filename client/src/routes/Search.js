@@ -2,7 +2,15 @@ import React from 'react'
 
 const Search = () => {
   return (
-    <h1>Search</h1>
+    <div>
+      <div className="header">
+          <h1>Search</h1>
+      </div>
+      <div className="search">
+        <input type="text" placeholder="Enter Your Book Name"></input>
+      </div>
+    </div>
+
   )
 }
 
