@@ -45,41 +45,49 @@ body{
 
 nav {
     margin: 0 auto;
-    height: 10%;
+    height: 60px; 
     width: 100%;
-    padding-top: 20px;
+    padding: 0 20px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
+    background-color: #8B4513; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
 }
 
 nav ul {
-    height: 200%;
     list-style-type: none;
     display: flex;
-    margin: auto;
+    align-items: center; /* Vertically centers the list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
     background-color: #8B4513;
     
 }
 
 nav ul li {
     list-style: none;
-    margin-right: 20px;
+    margin: 0 15px;
     color: white;
 }
 
 nav ul li a {
     line-height: 200%;
     text-decoration: none;
-    font: 30px;
+    font-size: 18px;
     padding: 0.3rem 1rem;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 li a:hover {
-  background-color: #111;
+  background-color:#DEB887;
 }
 
 .search{
@@ -87,6 +95,25 @@ li a:hover {
     display: flex;
     position: relative;
     bottom: 360px;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-right: 10px;  /* To give space between the input and button */
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8B4513;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .container{
