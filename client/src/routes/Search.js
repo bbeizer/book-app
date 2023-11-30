@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Card from '../components/Card'
 import axios from "axios"
 
@@ -24,7 +24,7 @@ const Search = () => {
           <h1>Search</h1>
       </div>
       <div className="search">
-        <input className="search-input" input type="text" placeholder="Enter Your Book Name" value={search} onChange={e => setSearch(e.target.value)} 
+        <input className="search-input" type="text" placeholder="Enter Your Book Name" value={search} onChange={e => setSearch(e.target.value)} 
         onKeyPress={searchBook} />
         <button className="search-button" onClick={fetchBooks}></button>
 

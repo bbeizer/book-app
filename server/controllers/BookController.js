@@ -1,5 +1,5 @@
 // BookController.js
-const Book = require('../models/Book');
+const Book = require('../models/book');
 
 const BookController = {
 
